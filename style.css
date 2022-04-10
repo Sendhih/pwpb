@@ -2,8 +2,9 @@
 *{
     margin: 0;
     padding: 0; 
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
 
 .slide{
     height: 100%;
-    width: 400px;
+    width: 380px;
     position: absolute;
     background-color: #fff;
     transition: 0.5s ease;
@@ -21,18 +22,19 @@ body{
 
 h1{
     color: #E0B0A6;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 30px;
     text-align: center;
-    padding: 10px 0;
-    padding-right: 30px;
+    padding: 18px 0;
+    padding-right: 20px;
     pointer-events: none;
 }
 
-ul li{
+.slide ul li{
     list-style: none;
 }
 
-ul li a{
+.slide ul li a{
     color: #E0B0A6;
     font-weight: 500;
     padding: 5px 0;
@@ -42,11 +44,11 @@ ul li a{
     transition: 0.2s ease-out;
 }
 
-ul li:hover a{
+.slide ul li:hover a{
     color: grey;
 }
 
-ul li a i{
+.slide ul li a i{
     width: 40px;
     text-align: center;
 }
@@ -61,8 +63,8 @@ input{
     position: absolute;
     height: 30px;
     width: 30px;
-    top: 10px;
-    left: 60px;
+    top: 23px;
+    left: 40px;
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;
@@ -121,3 +123,42 @@ input:checked ~ .slide{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+nav{
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+label.logo a{
+    color:#E0B0A6;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav .nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav .nav ul li a{
+    color: #E0B0A6;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 10px 13px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: gray;
+    transition: 0.5s;
+}
